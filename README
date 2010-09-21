@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                  Mary Mack 5000 Arduino Code                              //
 //                          Kaho Abe                                         //           
-//                        July 6, 2010                                       //
+//                        September 21, 2010                                       //
 ///////////////////////////////////////////////////////////////////////////////
 //References:                                                                //
 //http://www.arduino.cc/                                                     //
@@ -23,6 +23,8 @@ This project is a work in progress and future versions will be documented.
 There is the regular controller code, as well as the callibration code, which I use to callibrate the unique voltage ID's for each glove.
 This is to ensure that each glove is read correctly when running through the filter function. 
 I will add the callibration code soon.
+
+Here is a photo of the board: http://kahoabe.net/notes/wp-content/uploads/2010/09/mm5000_arduino_board.jpg
 ///////////////////////////////////////////////////////////////////////////////
 
 This project is supported by Eyebeam, where I am a fellow. 
