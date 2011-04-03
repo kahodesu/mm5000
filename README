@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                  Mary Mack 5000 Arduino Code                              //
 //                          Kaho Abe                                         //           
-//                        September 21, 2010                                       //
+//                        April 2, 2011                                       //
 ///////////////////////////////////////////////////////////////////////////////
 //References:                                                                //
 //http://www.arduino.cc/                                                     //
@@ -13,21 +13,17 @@
 //http://www.kasperkamperman.com/blog/arduino/arduino-flash-communication/   //
 ///////////////////////////////////////////////////////////////////////////////
 
-This is the code for a version of the prototype that uses 4 gloves and for the Lemonade song. 
-I haven't yet put in the tilt sensor, nor the shoulder/thigh pads. 
+This is the code for a version of the prototype that uses 4 gloves and new vest interfaces. 
+
+I haven't yet put in the tilt sensor.
 
 I will have to upload a hi-res photo of the board to clarify pin configuration. 
 
 This project is a work in progress and future versions will be documented. 
 
-There is the regular controller code, as well as the callibration code, which I use to callibrate the unique voltage ID's for each glove.
-This is to ensure that each glove is read correctly when running through the filter function. 
-I will add the callibration code soon.
 
-Here is a photo of the board: http://kahoabe.net/notes/wp-content/uploads/2010/09/mm5000_arduino_board.jpg
 ///////////////////////////////////////////////////////////////////////////////
 
 This project is supported by Eyebeam, where I am a fellow. 
-kaho@eyebeam.org
 http://kahoabe.net
 http://eyebeam.org

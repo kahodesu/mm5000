@@ -4,7 +4,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                  Mary Mack 5000 Arduino Code                              //
 //                          Kaho Abe                                         //           
-//                        July 6, 2010                                       //
+//                        April 2, 2011                                      //
 ///////////////////////////////////////////////////////////////////////////////
 //References:                                                                //
 //http://www.arduino.cc/                                                     //
@@ -53,7 +53,7 @@ void loop() {
   }
  
   // loop over all the input channels, read and add to string for each
-  for (int thisChannel = 0; thisChannel < 12; thisChannel++) {
+  for (int thisChannel = 4; thisChannel < 16; thisChannel++) {
     setChannel(thisChannel);
     int analogReading = filter(analogRead(0));  
     inString.append(analogReading);
@@ -61,15 +61,16 @@ void loop() {
    
   //if any combo string matches with any of the possible combos then...
   //this is an important step to clean up the data that gets sent
-  if(inString.equals("4321000000000000") || 
-     inString.equals("2143000000000000") ||  
-     inString.equals("0000000012340000") ||    
-     inString.equals("0000214300000000") ||  
-     inString.equals("3010000000000000") ||  
-     inString.equals("0402000000000000") ||   
-     inString.equals("0000000000005600") ) {
+    if(inString.equals("3010000000000000") || 
+     inString.equals("0402000000000000") ||  
+     inString.equals("2143000000000000") ||   
+     inString.equals("4321000000000000") ||  
+     inString.equals("0000000021430000") ||  
+     inString.equals("0000000000001234") ||  
+     inString.equals("0000660000000000") ){
       //send the string to the computer (flash)
      Firmata.sendString(inString);
+     
    }
 }
 
